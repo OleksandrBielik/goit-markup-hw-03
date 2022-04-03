@@ -98,6 +98,24 @@ a.logo:focus {
 .portfolio-filter-bar {
     display: flex;
     justify-content: center;
+    margin-bottom: 56px;
+}
+
+.portfolio-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px;
+}
+
+.portfolio-product-container li{
+    border: 1px solid rgba(238, 238, 238, 1);
+    width: 370px;
+    margin: 15px;
+}
+
+.portfolio-product-container li figcaption{
+    padding: 20px 24px;
 }
 
 .portfolio button {
@@ -237,9 +255,11 @@ a.logo:focus {
     border-bottom-left-radius: 4px;
 }
 
-.web-studio-team figure {
+.web-studio-team figure, 
+.portfolio figure {
     margin: 0;
 }
+
 
 .web-studio-team figcaption {
     padding: 30px 0;
