@@ -40,7 +40,7 @@ header.header-main .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0 25px 0;
+    padding: 24px 15px 25px 15px;
 }
 
 header.header-main {
@@ -99,6 +99,15 @@ a.logo:focus {
     display: flex;
     justify-content: center;
     margin-bottom: 56px;
+    width: 100%;
+}
+
+.portfolio-filter-bar li{
+    margin-right: 8px;
+}
+
+.portfolio-filter-bar li:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .portfolio-product-container {
