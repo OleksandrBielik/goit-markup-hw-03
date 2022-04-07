@@ -11,101 +11,132 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="header-main">
-            <nav>
-                <ul>
-                    <li><a class="logo" href="./index.html"><span>Web</span>Studio</a></li>
-                    <li><a href="./index.html">Студия</a></li>
-                    <li><a href="./portfolio.html">Портфолио</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="contacts">
-                <ul>
+            <div class="container flex">
+                <nav>
+                    <ul class="nav-bar">
+                        <li><a class="logo" href="./index.html"><span>Web</span>Studio</a></li>
+                        <li><a href="./index.html">Студия</a></li>
+                        <li><a href="./portfolio.html">Портфолио</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
                     <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </div>
         </header>
         <main class="web-studio">
-            <section class="web-studio-order">
-                <h1>Эффективные решения для вашего бизнеса</h1>
-                <button type="button">Заказать услугу</button>
+            <section class="section">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="web-studio-order">
+                            <h1>Эффективные решения для вашего бизнеса</h1>
+                            <button type="button">Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="web-studio-advantages">
-                <ul>
-                    <li>
-                        <h3 class="advantage-title">Внимание к деталям</h3>
-                        <p class="advantage-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li>
-                        <h3 class="advantage-title">Пунктуальность</h3>
-                        <p class="advantage-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li>
-                        <h3 class="advantage-title">Планирование</h3>
-                        <p class="advantage-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li>
-                        <h3 class="advantage-title">Современные технологии</h3>
-                        <p class="advantage-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
+            <section class="section">
+                <div class="container">
+                    <ul class="web-studio-advantages flex">
+                        <li>
+                            <h3 class="advantage-title">Внимание к деталям</h3>
+                            <p class="advantage-description">Идейные соображения, а также начало повседневной работы по формированию
+                                позиции.</p>
+                        </li>
+                        <li>
+                            <h3 class="advantage-title">Пунктуальность</h3>
+                            <p class="advantage-description">Задача организации, в особенности же рамки и место обучения кадров влечет
+                                за собой.</p>
+                        </li>
+                        <li>
+                            <h3 class="advantage-title">Планирование</h3>
+                            <p class="advantage-description">Равным образом консультация с широким активом в значительной степени
+                                обуславливает.</p>
+                        </li>
+                        <li>
+                            <h3 class="advantage-title">Современные технологии</h3>
+                            <p class="advantage-description">Значимость этих проблем настолько очевидна, что реализация плановых
+                                заданий.</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section class="web-studio-activity">
-                <h2>Чем мы занимаемся</h2>
-                <ul>
-                    <li><a href="#"><img src="images/coding.jpg" alt="Разрабатываем приложения с 0" width="370"> </a></li>
-                    <li><a href="#"><img src="images/mobile.jpg" alt="Адаптируем приложения под любые мобильные устройства" width="370"> </a></li>
-                    <li><a href="#"><img src="images/touchpad.jpg" alt="Адаптируем приложения под любые тачпад устройства" width="370"> </a></li>
-                </ul>
+            <section class="section">
+                <div class="container">
+                    <h2>Чем мы занимаемся</h2>
+                    <ul class="web-studio-activity flex">
+                        <li>
+                            <a href="#">
+                                <img src="images/coding.jpg" alt="Разрабатываем приложения с 0" width="370">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/mobile.jpg" alt="Адаптируем приложения под любые мобильные устройства" width="370">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/touchpad.jpg" alt="Адаптируем приложения под любые тачпад устройства" width="370">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section class="web-studio-team">
-                <h2>Наша команда</h2>
-                <ul>
-                    <li>
-                        <div class="web-studio-team-member">
+            <section class="section">
+                <div class="container">
+                    <h2>Наша команда</h2>
+                    <ul class="web-studio-team flex">
+                        <li>
                             <img src="images/designer.jpg" alt="Дизайнер" width="270">
-                            <p class="web-studio-team-member-title">Игорь Демьяненко</p>
-                            <p class="web-studio-team-member-description">Product Designer</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="web-studio-team-member">
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member-title">Игорь Демьяненко</h3>
+                                <p class="team-member-description">Product Designer</p>
+                            </div>
+                        </li>
+                        <li>
                             <img src="images/frontend.jpg" alt="Фронтенд разработчик" width="270">
-                            <p class="web-studio-team-member-title">Ольга Репина</p>
-                            <p class="web-studio-team-member-description"><span>Frontend Developer</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="web-studio-team-member">
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member-title">Ольга Репина</h3>
+                                <p class="team-member-description"><span>Frontend Developer</span></p>
+                            </div>
+                        </li>
+                        <li>
                             <img src="images/marketing.jpg" alt="Маркетолог" width="270">
-                            <p class="web-studio-team-member-title">Николай Тарасов</p>
-                            <p class="web-studio-team-member-description">Marketing</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="web-studio-team-member">
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member-title">Николай Тарасов</h3>
+                                <p class="team-member-description">Marketing</p>
+                            </div>
+                        </li>
+                        <li>
                             <img src="images/ui_designer.jpg" alt="Дизайнер" width="270">
-                            <p class="web-studio-team-member-title">Михаил Ермаков</p>
-                            <p class="web-studio-team-member-description">UI Designer</p>
-                        </div>
-                    </li>
-                </ul>
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member-title">Михаил Ермаков</h3>
+                                <p class="team-member-description">UI Designer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
         <footer class="footer-main">
-            <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-            <address>
-                <ul>
-                    <li>г. Киев, пр-т Леси Украинки, 26</li>
-                    <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </address>
+            <div class="container">
+                <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+                <address>
+                    <ul class="footer-address-list">
+                        <li>г. Киев, пр-т Леси Украинки, 26</li>
+                        <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
         </footer>
     </body>
 </html>

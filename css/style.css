@@ -6,10 +6,43 @@
     --main-color: #212121;
     --secondary-color: #757575;
     --white-color: #FFFFFF;
-    --shadow-color-first: rgba(0, 0, 0, 0.12);
-    --shadow-color-second: rgba(0, 0, 0, 0.08);
-    --shadow-color-third: rgba(0, 0, 0, 0.1);
+    --border-color: #ECECEC;
+    --border-color-product: #EEEEEE;
+    --button-shadow-color-first: #0000001F;
+    --button-shadow-color-second: #00000014;
+    --button-shadow-color-third: #0000001A;
+    --container-shadow-color-first: #00000033;
+    --container-shadow-color-second: #00000024;
 }
+
+
+h1,
+h2,
+h3,
+h3,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* li {
+    list-style-type: none;
+} */
+
+.section {
+    padding: 94px 0;
+}
+
+.section:nth-child(3){
+    padding-top: 0;
+}
+
+.section:nth-child(4) {
+    background-color: var(--background-color-section);
+}
+
+
 
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
@@ -18,7 +51,44 @@ body {
 
 header.header-main {
     background-color: var(--white-color);
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+}
 
+header .nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contacts > li:not(:first-child) {
+    margin-left: 50px;
+}
+
+.nav-bar > li:not(:first-child) {
+    margin-left: 50px;
+}
+
+.nav-bar > li:nth-child(2) {
+    margin-left: 93px;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header a, 
@@ -80,9 +150,9 @@ footer a:focus {
 .portfolio button:focus {
     background-color: var(--background-color-active);
     color: var(--white-color);
-    box-shadow: 0px 2px 2px 0px var(--shadow-color-first),
-    0px 1px 2px 0px var(--shadow-color-second),
-    0px 3px 1px 0px var(--shadow-color-third);
+    box-shadow: 0px 2px 2px 0px var(--button-shadow-color-first),
+    0px 1px 2px 0px var(--button-shadow-color-second),
+    0px 3px 1px 0px var(--button-shadow-color-third);
 }
 
 .portfolio button,
@@ -94,19 +164,48 @@ footer a:focus {
     border-radius: 4px;
 }
 
-.portfolio-product-list .portfolio-product-list-item-title {
+.portfolio-filter-bar {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-filter-bar li:not(:first-child){
+    margin-left: 8px;
+}
+
+.portfolio-filter-bar button {
+    padding: 6px 22px;
+}
+
+.portfolio-product-list {
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.portfolio-product-list > li{
+    margin: 15px;
+}
+
+.portfolio-product-list .product-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
+    margin-bottom: 4px;
+}
+
+.portfolio-product-list .product-wrapper {
+    padding: 20px 24px;
+    border: 1px solid var(--border-color-product);
+    border-top: none;
 }
 
 .portfolio-title {
     display: none;
 }
 
-.portfolio-product-list .portfolio-product-list-item-description {
+.portfolio-product-list .product-description {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
@@ -114,15 +213,36 @@ footer a:focus {
     color: var(--secondary-color);
 }
 
-.web-studio-team-member-title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    text-align: left;
+.web-studio-team > li {
+    box-shadow: 0px 2px 1px 0px var(--container-shadow-color-first), 
+    0px 1px 1px 0px var(--container-shadow-color-second), 
+    0px 1px 3px 0px var(--button-shadow-color-first);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
-.web-studio-team-member-description {
+.web-studio-team li > img,
+.web-studio-activity a > img,
+.portfolio-product-list li > img {
+    vertical-align: bottom;
+}
+
+
+
+.team-member-wrapper {
+    padding: 20px 0;
+}
+
+.team-member-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team-member-description {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -130,9 +250,20 @@ footer a:focus {
     color: var(--secondary-color);
 }
 
-.web-studio-order {
+.web-studio .wrapper {
     background-color: var(--background-color-dark);
     text-align: center;
+    padding: 200px 0;
+}
+
+.web-studio .section:nth-child(1) {
+    padding: 0;
+}
+
+.web-studio-order {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .web-studio-order h1 {
@@ -142,6 +273,7 @@ footer a:focus {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    margin-bottom: 30px;
 }
 
 .web-studio-order button {
@@ -152,7 +284,15 @@ footer a:focus {
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
+    padding: 10px 32px;
+}
 
+.web-studio-advantages {
+    justify-content: space-between;
+}
+
+.web-studio-advantages > li{
+    width: 270px;
 }
 
 .web-studio-advantages .advantage-description {
@@ -165,6 +305,7 @@ footer a:focus {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .web-studio h2 {
@@ -173,10 +314,16 @@ footer a:focus {
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.web-studio-activity {
+    justify-content: space-between;
 }
 
 .web-studio-team {
-    background-color: var(--background-color-section);
+    
+    justify-content: space-between;
 }
 .web-studio-team p{
     text-align: center;
@@ -197,9 +344,10 @@ footer a:focus {
 footer.footer-main {
     background-color: var(--background-color-dark);
     color: var(--white-color);
+    padding: 60px 0;
 }
 
-footer .logo {
+footer.footer-main .logo {
     color: var(--white-color);
 }
 
@@ -209,6 +357,11 @@ footer address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-align: left;
+    margin-top: 20px;
+}
+
+.footer-address-list > li:not(:last-child){
+    margin-bottom: 9px;
 }
 
 footer .tel, 
