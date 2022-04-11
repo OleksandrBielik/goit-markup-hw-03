@@ -26,9 +26,9 @@ p {
     padding: 0;
 }
 
-/* li {
+li {
     list-style-type: none;
-} */
+}
 
 .section {
     padding: 94px 0;
@@ -230,7 +230,8 @@ footer a:focus {
 
 
 .team-member-wrapper {
-    padding: 20px 0;
+    padding: 30px 0;
+    background-color: var(--white-color);
 }
 
 .team-member-title {
@@ -244,7 +245,7 @@ footer a:focus {
 
 .team-member-description {
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--secondary-color);
@@ -293,6 +294,7 @@ footer a:focus {
 
 .web-studio-advantages > li{
     width: 270px;
+    letter-spacing: 0.03em;
 }
 
 .web-studio-advantages .advantage-description {
@@ -368,6 +370,8 @@ footer .tel,
 footer .mail {
     color: var(--white-color);
     opacity: 60%;
+    letter-spacing: inherit;
+    line-height: inherit;
 }
 
 
